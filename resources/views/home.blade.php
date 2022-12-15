@@ -10,15 +10,16 @@
 </head>
 
 <body>
-    <header>
+    <header class="bg-light p-3">
         <nav class="nav justify-content-center  ">
             <a class="nav-link active" href="/">Home</a>
-            <a class="nav-link" href="/about">About</a>
+            <a class="nav-link" href="{{ url('about') }}">About</a>
+            <a class="nav-link" href="{{ url('contact') }}">Contact</a>
         </nav>
     </header>
     <main>
         <div class="container">
-            <h1>{{$home_page_title}}</h1>
+            <h1 class="mt-4">{{$home_page_title}}</h1>
         </div>
     </main>
 
